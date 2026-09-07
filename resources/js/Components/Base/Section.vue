@@ -12,11 +12,11 @@ defineProps({
 </script>
 
 <template>
-    <div class="rounded-lg border border-gray-200 bg-white p-5">
+    <div class="rounded-lg border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-gray-900">
         <div v-if="title || $slots.actions" class="mb-4 flex items-start justify-between gap-3">
             <div v-if="title">
-                <h3 class="text-sm font-semibold text-gray-900">{{ title }}</h3>
-                <p v-if="description" class="mt-0.5 text-sm text-gray-500">{{ description }}</p>
+                <h3 class="text-sm font-semibold text-gray-900 dark:text-gray-100">{{ title }}</h3>
+                <p v-if="description" class="mt-0.5 text-sm text-gray-500 dark:text-gray-400">{{ description }}</p>
             </div>
             <div v-if="$slots.actions" class="flex shrink-0 items-center gap-2">
                 <slot name="actions" />

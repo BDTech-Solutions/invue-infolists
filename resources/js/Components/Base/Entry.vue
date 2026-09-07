@@ -24,12 +24,12 @@ defineProps({
 
 <template>
     <div :class="SPAN_CLASSES[span] ?? ''">
-        <dt class="text-xs font-semibold tracking-wide text-gray-400 uppercase">{{ label }}</dt>
+        <dt class="text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-500">{{ label }}</dt>
         <!-- The value is always composed content — typically a
              resolved invue/tables column (<TextColumn>, <IconColumn>,
              ...) bound to the same record, reusing its formatting/
              badge/color logic instead of Infolist reinventing it. -->
-        <dd class="mt-1 text-sm text-gray-900">
+        <dd class="mt-1 text-sm text-gray-900 dark:text-gray-100">
             <slot />
         </dd>
     </div>
